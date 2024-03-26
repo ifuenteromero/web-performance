@@ -1,0 +1,47 @@
+https://www.youtube.com/watch?v=e55hZr_CZYo
+Fases del ciclo de renderizado de React: 
+El hablante describe tres fases principales del ciclo de renderizado de React: 
+la fase de renderizado, la fase de confirmación 
+y la fase de limpieza. 
+Explica cómo React determina qué componentes deben actualizarse en cada fase y cómo se lleva a cabo la actualización del DOM.
+
+Optimización del rendimiento: 
+Se discuten varias estrategias para optimizar el rendimiento de las aplicaciones React, 
+como empujar los cambios de estado hacia abajo en el árbol de componentes para reducir 
+la cantidad de componentes que necesitan actualizarse, y detener la propagación de los 
+cambios en componentes donde no son necesarios.
+
+Batching de actualizaciones: 
+Se aborda cómo React maneja la agrupación de actualizaciones en diferentes versiones. 
+En versiones anteriores como React 17, algunas actualizaciones se agrupaban en los 
+manejadores de eventos, mientras que en React 18 y posteriores, las actualizaciones se 
+agrupan automáticamente, lo que puede afectar la forma en que se realizan las 
+actualizaciones en la aplicación.
+
+Memoización y useCallback: Se mencionan los hooks useMemo y useCallback como herramientas
+ para optimizar el rendimiento al memoizar valores calculados y funciones, 
+ respectivamente. Se explica cómo estas herramientas pueden evitar la 
+ reevaluación innecesaria de valores y la creación repetida de funciones.
+
+Consideraciones de rendimiento: 
+El hablante destaca la importancia de considerar el rendimiento al diseñar aplicaciones React
+, y cómo decisiones como el uso de memoización o la optimización de actualizaciones 
+pueden afectar el rendimiento general de la aplicación.
+
+Ciclo de vida de los componentes:
+ Se revisa brevemente el ciclo de vida de los componentes en React, 
+ desde el montaje inicial hasta la actualización y desmontaje, y se mencionan 
+ los hooks de efecto (useEffect) como una herramienta para manejar efectos secundarios 
+ en componentes funcionales.
+
+En resumen, la transcripción proporciona una visión detallada de cómo funciona
+ el ciclo de renderizado de React, así como estrategias para optimizar el rendimiento de 
+ las aplicaciones React. También aborda conceptos como memoización y batching 
+ de actualizaciones, que son importantes para entender el rendimiento de las aplicaciones
+  React.
+
+
+
+
+
+
