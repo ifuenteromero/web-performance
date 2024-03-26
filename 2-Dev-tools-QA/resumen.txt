@@ -1,0 +1,109 @@
+https://youtu.be/JG3NFQtfXa4
+Notas
+Uso de herramientas de desarrollo: El texto destaca la importancia de utilizar herramientas como las Chrome Dev Tools al trabajar en aplicaciones de React. Se menciona cómo estas herramientas son útiles para depurar problemas y mejorar el rendimiento.
+
+Consideraciones sobre el benchmarking: Se discute el impacto del benchmarking en el rendimiento de la aplicación y cómo interpretar los resultados. Se enfatiza la necesidad de tener en cuenta el sobrecoste del benchmarking al analizar los números y cómo esto puede variar según el tamaño del código y la configuración del entorno.
+
+Regla de Oro del Rendimiento de Steve: Se introduce la "Regla de Oro del Rendimiento de Steve", que establece que "cualquier cosa que no hagas es más rápida". Esto resalta la importancia de minimizar las operaciones innecesarias para mejorar el rendimiento de la aplicación.
+
+Enfoque en la optimización: El texto hace hincapié en la importancia de optimizar el rendimiento de las aplicaciones de React y proporciona consejos sobre cómo identificar y abordar problemas de rendimiento.
+
+Novedades en React 18: Se menciona una característica nueva en React 18 que permite priorizar tareas según su importancia, lo que puede ser útil para mejorar el rendimiento en situaciones específicas.
+
+En resumen, la transcripción ofrece una visión detallada sobre cómo abordar problemas de rendimiento en aplicaciones de React, destacando la importancia de herramientas de desarrollo, la interpretación de resultados de benchmarking y estrategias para optimizar el rendimiento.
+
+
+
+
+
+
+TRANSCRIPCIÓN
+
+
+A menudo, ¿necesitas recurrir a las Chrome Dev Tools cuando trabajas en una aplicación de 
+React? ¿Cuáles son los casos? Digamos, ¿cuándo el perfilador de React no es suficiente?
+
+Es complicado, ¿verdad? En la medida en que estoy trabajando en una aplicación JavaScript, 
+cosas como el depurador y puntos de interrupción y registros en consola.
+
+Es difícil para mí delinear porque estoy en ellos todo el tiempo, ¿verdad? Diría que todavía, 
+en general, ¿mi código se comporta como quiero que lo haga? Cosas como los elementos
+ en la consola y algunas de las otras piezas todavía son increíblemente útiles para mí.
+
+Creo que es cuando sé que tengo un problema. Y para mí, parte de la razón por la que 
+es realmente difícil para mí responder a esa pregunta es porque si cualquiera de las 
+herramientas está abierta, todavía estoy viendo esas cajas verdes parpadeando. 
+Así que simultáneamente estoy mirando mi consola y obteniendo información de las 
+herramientas de React al mismo tiempo.
+
+Para mí es omnipresente en ambos casos, lo cual es una de las cosas que realmente 
+me gustan de la herramienta.
+
+Y la segunda pregunta es ¿cuánto sobrecoste agrega el propio benchmarking? 
+Entonces, digamos que si estoy notando un número particular, 
+¿necesito descontarlo en cierto porcentaje al asumir que se ejecuta en-
+
+No sé si hay una heurística. Es varias veces más lento, ¿verdad? Incluso he escuchado 
+la palabra exponencial, eso suena como exageración, ¿verdad? Pero creo que decir que
+ es tal vez dos o tres veces más lento es probablemente justo.
+
+Así que la heurística general en la que podríamos estar de acuerdo es que si estás ejecutando 
+y ves que esto ha disminuido proporcionalmente, eso significa que has mejorado.
+
+Pero el examen probablemente será aún más eficiente una vez que ejecutes la compilación 
+de producción sin el sobrecoste de eso.
+
+Sí, y depende del tamaño del código y cosas así. Hay una forma de compilar una producción 
+al menos en create React app.
+
+Y hay diferentes formas para cada configuración diferente, ya sea que estés usando Vite, 
+Webpack, tu propia cosa. Hay varias formas de también hacer una compilación de producción que tiene el perfilado en ella,
+ ¿verdad? Para que puedas obtener un número más cercano a uno real y las herramientas de Chrome regulares 
+ funcionarán en una compilación de producción, simplemente no obtendrás una hoja de trucos para saber 
+ qué componente es, ¿verdad?
+
+Lo que te está costando todo ese tiempo extra es toda la información que lo hace útil. Pero sí, en tu punto, 
+especialmente si uno tiene un sistema donde pueden asignar, tienen métricas en su proceso de compilación 
+para decir, no necesariamente importa si fueron 60 milisegundos en modo de desarrollo, si es un 12% peor 
+de lo que fue el último sprint.
+
+Sí, sigue siendo un problema, ¿verdad? Y así, los números relativos todavía son útiles para averiguar si tienes
+un problema emergente. Pero sí, es solo una de esas cosas en las que el número exacto, no deberías tomarlo particularmente 
+en serio porque estará inflado. Primero, vamos a hablar de la Regla de Oro del Rendimiento de Steve, 
+a la que aludí antes y arruiné.
+
+Olvidé que hice esa animación porque sentí que era tan importante. Hablaremos de los corolarios de hacer esto, 
+que es, cualquier cosa que no hagas es más rápida. Es como prevenir renders pero también prevenir la memorización, 
+prevenir renders, todo lo que no hagas es más rápido que hacerlo y eso es en última instancia en lo que se reduce 
+el rendimiento.
+
+No es como que la computadora esté pasando tiempo extra pensando y reflexionando sobre la vida, 
+es hacer trabajo extra que has considerado innecesario, ¿verdad? O como veremos al final de este curso, 
+es hacer trabajo que es necesario en un momento que no es óptimo, ¿verdad? Y donde terminamos al final 
+y simplemente pintamos el panorama, que a veces estás haciendo una cosa que, sí, lleva mucho, ¿verdad?
+
+Lo que hacen las API de concurrencia en React que veremos hacia esas son te permiten decir como, 
+oye, pero primero, tal vez reaccionemos ante su tipeo y clics reales. Y luego podemos volver a hacer 
+la cosa costosa, ¿verdad? Porque eso es realmente lo que nos importa, ¿verdad?
+
+Las cosas largas pueden llevar mucho tiempo. Absolutamente, pero queremos llegar al punto donde, 
+está bien, pero nuestra cosa no debería congelarse totalmente, ¿verdad? Y deberíamos seguir respondiendo 
+a las pulsaciones de teclas y cosas así. Pero sí, en general, el tema recurrente es que no renderizar 
+es más rápido que renderizar. No memorizar es más rápido que memorizar.
+
+Cargar cosas más tarde cuando las necesitas es más rápido que cargar al principio. 
+Sí, eso es verdad. Asombroso, y así, el color es, como mencioné, no hacer cosas es más rápido que hacer cosas, 
+verificar si puedes saltarte hacer cosas es a veces un trabajo real que fue más lento que hacerlo, ¿verdad?
+
+Y por eso la medición es importante. Si piensas como, la cosa se está renderizando, no debería renderizarse 
+totalmente. Deberías mirar eso y ver cuánto cuesta detenerlo para que no se renderice porque tal vez el acto 
+de renderizar fue más rápido que memorizarlo, ¿verdad? Y por eso usamos las herramientas, por eso usamos la verdad 
+objetiva en lugar de solo como he escrito una publicación en el blog, debería hacerlo totalmente.
+
+Sí, y luego, sí, estas cosas las veremos en el tipo de tercer capítulo del curso, que es mejor posponer las cosas.
+ Y luego, por último, esto es nuevo en React 18. En React 17, todo era urgente, ¿verdad? Bueno, es una de esas cosas,
+  todo era igual. Y si todo es urgente, nada es urgente.
+
+Y así, React 18 nos da la capacidad de retrasar entre, esto es importante, esto puede esperar, y veremos cómo 
+usarlo en casos donde estamos atrapados con algún tipo de problema.
+
