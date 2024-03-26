@@ -1,0 +1,41 @@
+https://www.youtube.com/watch?v=8TjgKkl-91o
+Introduction:
+
+Steve, head of frontend engineering at Temporal, introduces the topic of React performance.
+Performance in web development is multifaceted, encompassing various aspects beyond just React optimization.
+Steve emphasizes the importance of considering factors like content delivery networks (CDNs) alongside React performance for a comprehensive approach.
+Discussion of Example Apps:
+
+Steve mentions the challenge of creating example apps that cover all aspects of React performance.
+He introduces five repositories as resources, highlighting practical examples for discussion.
+These examples are intended to aid in understanding React performance concepts.
+Course Overview:
+
+Steve outlines the agenda for the course, focusing on React performance optimization.
+The course aims to provide insights into React's internal workings and best practices.
+It targets developers interested in enhancing the performance of their React applications or avoiding common pitfalls.
+Understanding React Performance:
+
+Steve discusses the need to understand how React operates to improve performance effectively.
+He emphasizes the importance of building a toolkit for diagnosing and addressing performance issues.
+While React offers decent performance out of the box, understanding its nuances is crucial for optimization.
+Identifying Performance Issues:
+
+Steve highlights the cumulative nature of performance issues, often stemming from multiple small factors.
+He warns against overlooking performance concerns, as they can escalate over time.
+The course aims to equip developers with the skills to identify and address performance bottlenecks proactively.
+React Best Practices:
+
+Steve emphasizes the importance of following React best practices to avoid performance pitfalls.
+Understanding the rationale behind these practices is essential for effective optimization.
+The course will explore practical examples to illustrate these concepts clearly.
+Performance Optimization Techniques:
+
+Steve discusses various optimization techniques, including caching, memoization, and component structuring.
+He highlights the importance of minimizing unnecessary operations for improved performance.
+The course will cover React's new concurrency features introduced in React 18 and their relevance for performance optimization.
+Conclusion:
+
+Steve previews the course's conclusion, which will outline a hierarchy for solving performance problems in React.
+He emphasizes the significance of structuring components and state efficiently to mitigate performance issues.
+The course will conclude with insights into React's newer APIs and their potential impact on performance optimization.
