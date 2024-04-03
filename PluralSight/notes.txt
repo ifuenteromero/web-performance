@@ -1,3 +1,0 @@
-1 Why performance optimization matters
-https://youtu.be/Q4w1dg2aNOQ
-https://github.com/ifuenteromero/pluralsight-course-react-performance

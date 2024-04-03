@@ -1,0 +1,24 @@
+1 Why performance optimization matters
+https://youtu.be/Q4w1dg2aNOQ
+https://github.com/ifuenteromero/pluralsight-course-react-performance
+
+2- Avoiding the Pitfalls of Performance
+https://youtu.be/6H9VmfnMb_Y
+
+3- Get to Know Common React Bottlenecks
+https://youtu.be/kt9EM1Ag1co
+
+4 - Summary
+https://youtu.be/5xpj6UjyG7c
+
+5- What Is a Performance Audit?
+https://youtu.be/F0fcI_A3JPw
+
+6- Performance Audit Step-by-Step
+https://youtu.be/AaZRpF2oWMQ
+
+7- Understanding and Auditing Web Vitals
+https://youtu.be/ND2KWRdCzIU
+
+8- Measuring App Rendering Performance
+https://youtu.be/u5foMuEcRvs
