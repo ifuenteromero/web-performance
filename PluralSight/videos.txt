@@ -22,3 +22,16 @@ https://youtu.be/ND2KWRdCzIU
 
 8- Measuring App Rendering Performance
 https://youtu.be/u5foMuEcRvs
+
+9- Measuring App Execution Performance
+
+10- Measuring App Memory Performance
+
+11- Measuring Render Time with <Profiler />
+
+12- Monitoring Performance Over Time
+
+13- 
+
+4- 2- Diagnosing Why Components Update
+https://youtu.be/h4vkixBROFQ
