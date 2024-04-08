@@ -35,3 +35,6 @@ https://youtu.be/u5foMuEcRvs
 
 4- 2- Diagnosing Why Components Update
 https://youtu.be/h4vkixBROFQ
+
+4- 3 Simplifying Passing of Props
+https://youtu.be/jJ7oaSEIYlc
